@@ -44,5 +44,12 @@ type : "tags"
 
 #### HASH表
 
+&#8195;&#8195;redis中的hash哈希表是一个String类型的field字段和value值之间的映射表，类似于Java中Hashmap。
 
+- HSET key field value：设置字段值，如果之前存在该Field那么则进行覆盖，返回0，反之返回0。
+- HGET key field：获取字段值。
+- HEXISTS key field：检查指定field字段是否存在，存在则返回1，不存在则返回0
+- HDEL key field [field...] 删除key哈希表中的一个或多个指定的field字段。
+- HKEYS key：获取key哈希表所有的field字段，类似KeySet
+- HVALS key：获取key哈希表所有的field字段value，类似values
 
